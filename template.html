@@ -1,0 +1,35 @@
+<!-- [relay]localhost:25[/relay] -->
+<!-- [from]Rich Email <rich@somedomain.com>[/from] -->
+<!-- [to]John <john@anotherdomain.com>, Alice <alice@yetanotherdomain.com>[/to] -->
+<!-- [cc]Bob <bob@anydomain.com>[/cc] -->
+<!-- [bcc]Brian <brian@hidden.com>[/bcc] -->
+<!-- [subject]Rich email for {{.month}} {{.year}}[/subject] -->
+<!-- [attachment]https://www.rfc-editor.org/rfc/pdfrfc/rfc2549.txt.pdf[/attachment] -->
+<!-- [attachment]https://www.rfc-editor.org/rfc/pdfrfc/rfc7168.txt.pdf[/attachment] -->
+<html>
+
+<head>
+<style>
+img {
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #aaa;
+}
+</style>
+</head>
+
+<body>
+Here's a random inlined image for {{.month}} {{.year}}:<br />
+<br/>
+<img src="https://picsum.photos/480/270"/><br/>
+<br/>
+And another one:<br/>
+<br/>
+<img src="https://picsum.photos/480/270"/><br/>
+<br/>
+Also find attached two April Fools' Day IETF RFC.<br/>
+<br/>
+Cheers.<br/>
+<br/>
+</body>
+
+</html>
